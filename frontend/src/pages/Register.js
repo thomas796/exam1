@@ -22,7 +22,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('https://exam1-lttd.onrender.com/api/auth/register', formData);
+      await axios.post(`${process.env.API_BASE_URL}/auth/register`, formData);
       alert('Inscription réussie ! Vous pouvez maintenant vous connecter.');
       navigate('/login');
     } catch (err) {

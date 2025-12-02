@@ -1,9 +1,8 @@
 // src/services/api.js
 import axios from 'axios';
 
-const API_BASE_URL = "https://exam1-lttd.onrender.com/api";
 
-export const fetchProducts = () => axios.get(`${API_BASE_URL}/products`);
+export const fetchProducts = () => axios.get(`${process.env.API_BASE_URL}/products`);
 
 export const createOrder = (orderData) => {
     console.log(`appel fonction createOrder avec orderData ${JSON.stringify(orderData)}`)
