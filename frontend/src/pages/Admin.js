@@ -47,6 +47,7 @@ const Admin = () => {
     setLoadingOrder(null); // Désactive le loader
   };
 
+  
   // const handleOrderValidation = async (orderId) => {
   //   await validateOrder(orderId);
   //   alert(`Commande ${orderId} validée.`);

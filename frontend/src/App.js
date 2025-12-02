@@ -12,7 +12,7 @@ import ProtectedRoute from './components/ProtectedRoute';
 import AdminRoute from './components/AdminRoute';
 import ShippingPayment from './pages/ShippingPayment';
 
-// Layout principal avec Navbar et Outlet
+// Layout principal avec Navbar et Outlet t
 const MainLayout = () => (
   <>
     <Navbar />
