@@ -14,7 +14,7 @@ const Login = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-      `${process.env.API_BASE_URL}/auth/login`,
+      `https://exam1-lttd.onrender.com/api/auth/login`,
         credentials
       );
       const { token, role, username } = response.data;

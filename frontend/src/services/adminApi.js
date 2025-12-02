@@ -5,7 +5,7 @@ import axios from "axios";
 export const getOrders = () => {
   try {
     const token = localStorage.getItem("token");
-    return axios.get(`${process.env.API_BASE_URL}/orders`, {
+    return axios.get(`https://exam1-lttd.onrender.com/api/orders`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -19,7 +19,7 @@ export const getOrders = () => {
 export const getProducts = () => {
   try {
     const token = localStorage.getItem("token");
-    return axios.get(`${process.env.API_BASE_URL}/products`, {
+    return axios.get(`https://exam1-lttd.onrender.com/api/products`, {
       headers: {
         Authorization: `Bearer ${token}`,
       },
@@ -34,7 +34,7 @@ export const updateOrderStatus = (orderId, status) => {
   try {
     const token = localStorage.getItem("token");
     return axios.put(
-      `${process.env.API_BASE_URL}/orders/${orderId}/status`,
+      `https://exam1-lttd.onrender.com/api/orders/${orderId}/status`,
       { status },
       {
         headers: {
@@ -55,7 +55,7 @@ export const validateOrder = (orderId) => {
   try {
     const token = localStorage.getItem("token");
     return axios.put(
-      `${process.env.API_BASE_URL}/orders/${orderId}/validate`,
+      `https://exam1-lttd.onrender.com/api/orders/${orderId}/validate`,
       {},
       {
         headers: {
@@ -73,7 +73,7 @@ export const updateProductStock = (productId, stock) => {
   try {
     const token = localStorage.getItem("token");
     return axios.put(
-      `${process.env.API_BASE_URL}/products/${productId}/stock`,
+      `https://exam1-lttd.onrender.com/api/products/${productId}/stock`,
       { stock },
       {
         headers: {
